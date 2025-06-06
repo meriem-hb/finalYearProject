@@ -1,0 +1,96 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 230 50% 95%; /* Light Blue - E8EAF6 */
+    --foreground: 222 47% 11%; /* Dark Gray */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 231 48% 48%; /* Deep Blue - 3F51B5 */
+    --primary-foreground: 0 0% 100%; /* White */
+    --secondary: 230 30% 88%; /* Lighter blue-gray */
+    --secondary-foreground: 222 47% 11%;
+    --muted: 230 30% 88%;
+    --muted-foreground: 222 47% 45%; /* Medium Gray */
+    --accent: 36 100% 50%; /* Orange - FF9800 */
+    --accent-foreground: 0 0% 100%; /* White */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 230 25% 80%;
+    --input: 230 25% 80%;
+    --ring: 231 48% 48%; /* Deep Blue */
+    --radius: 0.5rem;
+
+    --chart-1: 231 48% 48%;
+    --chart-2: 36 100% 50%;
+    --chart-3: 230 30% 68%;
+    --chart-4: 210 40% 56%;
+    --chart-5: 180 40% 45%;
+
+    /* Sidebar specific variables */
+    --sidebar-background: 0 0% 100%; /* Changed to white */
+    --sidebar-foreground: 222 47% 11%; /* Changed to dark gray */
+    --sidebar-primary: 36 100% 50%; /* Accent color - Orange (for specific highlights if used by component) */
+    --sidebar-primary-foreground: 0 0% 100%; /* White (for text on sidebar-primary) */
+    --sidebar-accent: 230 30% 88%; /* Changed to light gray (like muted) for hover backgrounds */
+    --sidebar-accent-foreground: 222 47% 11%; /* Changed to dark gray for text on hover */
+    --sidebar-border: 230 25% 80%; /* Changed to light gray (like border) */
+    --sidebar-ring: 36 100% 50%; /* Accent for ring - Orange */
+  }
+
+  .dark {
+    --background: 230 15% 18%; /* Dark blue-gray */
+    --foreground: 230 50% 95%; /* Light Blue */
+    --card: 230 15% 22%;
+    --card-foreground: 230 50% 95%;
+    --popover: 230 15% 22%;
+    --popover-foreground: 230 50% 95%;
+    --primary: 36 100% 50%; /* Orange */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 230 15% 25%;
+    --secondary-foreground: 230 50% 95%;
+    --muted: 230 15% 25%;
+    --muted-foreground: 230 30% 70%;
+    --accent: 231 48% 60%; /* Lighter Deep Blue */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 230 15% 30%;
+    --input: 230 15% 30%;
+    --ring: 36 100% 50%; /* Orange */
+    
+    --chart-1: 36 100% 50%;
+    --chart-2: 231 48% 60%;
+    --chart-3: 230 30% 70%;
+    --chart-4: 210 40% 70%;
+    --chart-5: 180 40% 60%;
+
+    /* Sidebar specific variables for dark theme (remains dark) */
+    --sidebar-background: 230 15% 12%; /* Very dark blue-gray */
+    --sidebar-foreground: 230 50% 85%; /* Lighter blue-gray */
+    --sidebar-primary: 36 100% 50%; /* Orange */
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 230 15% 20%; /* Slightly lighter than background for hover */
+    --sidebar-accent-foreground: 230 50% 90%;
+    --sidebar-border: 230 15% 8%; /* Even darker for border */
+    --sidebar-ring: 36 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
