@@ -2,30 +2,6 @@
 
 Edumentor is a platform directed to students and teachers. It's a place where students can ask questions and teachers can answer them.
 
-## 🚀 Installation
-
-Make sure you have:
-
-- Node.js installed
-- Firebase account
-
-```bash
-# Clone repository
-git clone
-
-# Navigate to project
-cd project-repo
-
-# Install dependencies
-npm install
-
-# Set up environment variables
-# Create .env.local file with your Firebase config
-
-# Run development server
-npm run dev
-```
-
 ## ✨ Main Features
 
 Below are some of the main features of the app.
